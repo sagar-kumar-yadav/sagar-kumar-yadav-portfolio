@@ -72,9 +72,7 @@ const Contact = () => {
                 className="contact_form_input"
               ></textarea>
             </div>
-            {/* <button type="submit" value="Send" className="submitButton">
-              Submit
-            </button> */}
+
             <div className="submit_btn_cont">
               <button type="submit" value="Send" className="button bg-orange-700 text-lg text-white font-bold rounded-md py-3 px-5">
                 Submit
