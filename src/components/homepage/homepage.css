@@ -1,7 +1,7 @@
 .home{
   width: 100vw;
   position: relative;
-  min-height: 47rem;
+  min-height: 50rem;
   overflow: hidden;
   background: rgb(50, 50, 50);
   color: white;
@@ -39,7 +39,7 @@
 
 .home_mouse{
   position: absolute;
-    bottom: 3%;
+    bottom: 7%;
     left: 50%;
     transform: translateX(-50%);
 }
