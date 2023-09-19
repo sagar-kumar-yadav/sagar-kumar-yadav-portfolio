@@ -13,6 +13,7 @@
 
 .contact_me_section{
     margin-bottom: 5rem;
+    padding: 1rem;
 }
 
 .contact_me_header{
@@ -49,12 +50,12 @@
 }
 
 .contact_form_cont{
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px black;
     max-width: 50rem;
-    width: 100%;
+    width: 70%;
     border-radius: 5px;
     margin: 5rem auto 0 auto;
-    padding: 4rem;
+    padding: 1rem;
 }
 
 
