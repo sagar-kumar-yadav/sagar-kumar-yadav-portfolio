@@ -19,8 +19,8 @@ const About = () => {
             <h3 className="about_grid_heading">Get to know me!</h3>
             <div className="about_content_details">
               <p className="about_para">
-                I'm a <strong>Frontend Web Developer</strong> building the
-                Front-end of Websites and Web Applications that leads to the
+                I'm a <strong>Web Developer</strong> building the
+                Front-end and Back-end of the Websites and Web Applications that leads to the
                 success of the overall product. Check out some of my work in the{" "}
                 <strong>Projects</strong> section.
               </p>
@@ -63,13 +63,15 @@ const About = () => {
               <div className="skill">HTML</div>
               <div className="skill">CSS</div>
               <div className="skill">JavaScript</div>
-              <div className="skill">React</div>
+              <div className="skill">React.js</div>
               <div className="skill">JAVA</div>
               <div className="skill">Python</div>
-              <div className="skill">NodeJs</div>
-              <div className="skill">Express Basics</div>
-              <div className="skill">MongoDB Basics</div>
-              <div className="skill">MySql Basics</div>
+              <div className="skill">Node.js</div>
+              <div className="skill">Express.js</div>
+              <div className="skill">MongoDB</div>
+              <div className="skill">MySql</div>
+              <div className="skill">Tailwind</div>
+              <div className="skill">Git</div>
             </div>
           </div>
         </div>

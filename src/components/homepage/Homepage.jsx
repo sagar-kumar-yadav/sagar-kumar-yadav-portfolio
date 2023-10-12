@@ -22,7 +22,7 @@ const Homepage = () => {
             </h1>
           </div>
           <p className="text-md text-white 2xl:mt-5">
-            Front-End Web Developer with ability to learn and collaborate in
+            Web Developer with ability to learn and collaborate in
             rapidly changing environments and compositions.
           </p>
           <div className="mt-10 flex gap-10">

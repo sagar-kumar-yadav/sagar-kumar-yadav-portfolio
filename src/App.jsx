@@ -4,31 +4,27 @@ import Homepage from "./components/homepage/Homepage";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
-// import Contact1 from "./components/contact/Contact1";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev);
+  };
   return (
     <>
-      {/* <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="about" element={<About />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="contacts" element={<Contact />} />
-        </Routes>
-      </BrowserRouter> */}
-
-      <Navbar />
+      <Navbar toggleMenu={toggleMenu} />
       <Homepage />
       <About />
       <Projects />
       <Contact />
       <Footer />
-
-      {/* <Contact1 /> */}
     </>
   );
 };
