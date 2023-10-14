@@ -32,7 +32,7 @@ const Homepage = () => {
               </button>
             </a>
 
-            <a href="https://docs.google.com/document/u/1/d/e/2PACX-1vTFS4qv5lZSrH6To2Gxj88pkX5uxe-UjB1qZCSL-9Ea-6AVrIhw9wd_WX8JvRchHV3DCJojopxXWopp/pub">
+            <a href="https://drive.google.com/file/d/17GFVbLRUP_WUA6JweYx9hmKOEfPZ1fMZ/view?usp=sharing">
               <button className="text-lg text-white font-semibold rounded-md py-3 px-5 project_btn">
                 Download CV
               </button>
