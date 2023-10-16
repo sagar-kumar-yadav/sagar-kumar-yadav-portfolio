@@ -43,12 +43,7 @@ const Contact = () => {
             <img src={photo} alt="img-here" className="w-[100%] h-[100%] p-4" />
           </div>
         </div>
-        <form
-          ref={form}
-          novalidate=""
-          className="space-y-6"
-          onSubmit={sendEmail}
-        >
+        <form ref={form} className="space-y-6" onSubmit={sendEmail}>
           <div>
             <label for="name" className="text-sm">
               Full name
