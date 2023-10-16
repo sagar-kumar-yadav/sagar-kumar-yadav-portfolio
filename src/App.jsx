@@ -19,7 +19,7 @@ const App = () => {
   };
   return (
     <>
-      <Navbar toggleMenu={toggleMenu} />
+      <Navbar toggleMenu={toggleMenu} isOpen={isOpen} />
       <Homepage />
       <About />
       <Projects />

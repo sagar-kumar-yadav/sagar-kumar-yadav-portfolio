@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="footer_row2">
             <h4 className="footer_heading1">Sagar Kumar Yadav</h4>
             <p className="footer_short_desc">
-              <span>sagarkryadav31@gmail.com</span>
+              <span className=" ">sagarkryadav31@gmail.com</span>
               <span>+91 8578858827</span>
               <span>Pune, Maharashtra</span>
             </p>

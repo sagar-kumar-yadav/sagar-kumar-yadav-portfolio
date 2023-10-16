@@ -27,7 +27,7 @@ const Homepage = () => {
           </p>
           <div className="mt-10 flex gap-10">
             <a href="mailto:sagarkryadav31@gmail.com">
-              <button className="text-lg text-white font-semibold rounded-md py-3 px-5 hire_me_btn">
+              <button className="text-lg text-white font-bold rounded-md py-3 px-5 hire_me_btn">
                 Hire Me
               </button>
             </a>

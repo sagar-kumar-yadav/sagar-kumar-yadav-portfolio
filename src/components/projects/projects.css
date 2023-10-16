@@ -51,6 +51,13 @@
     padding: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .project_box_cont{
+        /* padding: 2rem; */
+        margin: 1rem;
+    }
+}
+
 .projects_all{
     display: flex;
     flex-wrap: wrap;
@@ -117,3 +124,4 @@ align-items: center;
 .check_it_out_btn:hover{
     background-color: #22066a;
   }
+

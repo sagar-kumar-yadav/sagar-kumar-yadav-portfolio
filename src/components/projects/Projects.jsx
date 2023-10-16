@@ -20,7 +20,7 @@ const Projects = () => {
         </div>
 
         <div className="flex flex-wrap gap-10 lg:gap-20 justify-center ">
-          <div className="w-[450px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
+          <div className="project_box_cont w-[450px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
             <img
               src={project}
               alt="img1"
@@ -42,7 +42,7 @@ const Projects = () => {
               </p> */}
             </div>
           </div>
-          <div className="w-[350px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
+          <div className="project_box_cont w-[350px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
             <img
               src={Project1}
               alt="img1"
@@ -66,7 +66,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="w-[450px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
+          <div className="project_box_cont w-[450px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
             <img
               src={Project2}
               alt="img1"
@@ -89,7 +89,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="w-[350px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
+          <div className="project_box_cont w-[350px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
             <img
               src={Project3}
               alt="img1"
@@ -111,7 +111,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="w-[450px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
+          <div className="project_box_cont w-[450px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
             <img
               src={Project4}
               alt="img1"

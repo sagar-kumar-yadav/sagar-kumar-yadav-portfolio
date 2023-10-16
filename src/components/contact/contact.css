@@ -2,7 +2,7 @@
     width: 100vw;
     background: rgb(50 50 50 / 97%);
     color: white;
-    padding: 8rem 0;
+    padding: 3rem 0;
 }
 
 .contact_container{
@@ -10,6 +10,15 @@
     margin: auto;
     width: 100%;
 }
+
+
+@media (max-width: 768px) {
+    .photo_cont{
+        margin: auto;
+        padding-top: 2rem;
+    }
+}
+
 
 .contact_me_section{
     margin-bottom: 5rem;
@@ -87,8 +96,7 @@ padding: 1rem;
 }
 
 .submit_btn_cont{
-    display: flex;
-    justify-content: end;
+    /* display: flex; */
     margin-right: 1rem;
     padding: 1rem;
 }
