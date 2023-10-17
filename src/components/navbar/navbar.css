@@ -72,16 +72,19 @@
 }
 
 
+.header_link{
+  cursor: pointer;
+}
 
 
 /* --------------------------------------------------------------------------------------------- */
 .navbar {
-    /* box-shadow: 0px 5px 10px 0px #aaa; */
+    box-shadow: 0px 5px 10px 0px #3b3535;
     position: fixed;
     width: 100%;
     background: #fff;
     color: #000;
-    opacity: 0.85;
+    /* opacity: 0.85; */
     height: 50px;
     z-index: 12;
   }
@@ -116,7 +119,10 @@
     color: #c05621;
     transition: color 0.3s ease-in-out;
   }
-  
+
+  .menu-items a.active{
+    color: #c05621;
+  }
   .logo {
     order: 1;
     font-size: 2.3rem;
