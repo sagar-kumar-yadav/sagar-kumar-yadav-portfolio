@@ -16,7 +16,7 @@ const About = () => {
 
         <div className="about_grid w-full flex flex-col lg:flex-row gap-10 2xl:gap-20 p-4">
           <div className="about_grid_cont flex-grow-[0.7]">
-            <h3 className="about_grid_heading">Get to know me!</h3>
+            <h3 className="about_grid_heading">Get to know me!👀</h3>
             <div className="about_content_details">
               <p className="about_para">
                 I'm a <strong>Web Developer</strong> building the Front-end and
@@ -56,7 +56,7 @@ const About = () => {
           </div>
 
           <div className="about_skills p-4 flex-grow-[0.3]">
-            <h3 className="about_skills_header">My Skills</h3>
+            <h3 className="about_skills_header">My Skills🎉</h3>
             <div className="skills">
               <div className="skill">HTML</div>
               <div className="skill">CSS</div>

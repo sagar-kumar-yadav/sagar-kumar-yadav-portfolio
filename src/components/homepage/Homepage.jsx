@@ -62,7 +62,7 @@ const Homepage = () => {
   return (
     <section
       id="home"
-      className="home h-[100vh] bg-[#f7f7f7] text-black bg-[#f7f7f7] min-h-max relative overflow-hidden"
+      className="h-[100vh] bg-[#1c1a1a] text-white dark:text-black dark:bg-[#f7f7f7] min-h-max relative overflow-hidden "
     >
       <div
         className="home_content flex pt-48 pb-40 w-[75%] m-auto"
@@ -82,7 +82,7 @@ const Homepage = () => {
           </div>
           <div className=" text-lg font-medium text-left ">
             <span className=" text-5xl font-semibold">
-              Full-Stack developer👋
+              Full-Stack developer👋🏻
             </span>{" "}
             <p className="">
               <span className="font-semibold">based in Pune, India</span>
@@ -93,13 +93,12 @@ const Homepage = () => {
           {/* github and linkedin link ----- */}
           <div className="flex gap-2 pt-4">
             <a href="https://www.linkedin.com/in/sagar-kumar-yadav/">
-              <img className="w-6" src={Linkdin} alt="icon" />
+              <img className="w-6 bg-white rounded-full" src={Linkdin} alt="icon" />
             </a>
-            
+
             <a href="https://github.com/sagar-kumar-yadav">
-              <img className="w-6 " src={Github} alt="icon" />
+              <img className="w-6 bg-white rounded-full" src={Github} alt="icon" />
             </a>
-            
           </div>
 
           {/* Hire me and download cv */}
@@ -112,13 +111,12 @@ const Homepage = () => {
                 Hire Me
               </button>
             </a>
-           
+
             <a href="https://drive.google.com/file/d/1t1RfWu9raKqSW8IBHSJ9FgOhY0pKQ9Z4/view?usp=share_link">
               <button className="text-lg  font-semibold rounded-md py-2 px-5 dark:bg-black dark:text-white project_btn">
                 Download CV
               </button>
             </a>
-           
           </div>
 
           {/* Tech Stack ----------------- */}
@@ -140,7 +138,7 @@ const Homepage = () => {
       </div>
       {/* mouse */}
       <div className="home_mouse">
-        <div className="mouse dark:border-b dark:border-solid border-[#787373] before:bg-black"></div>
+        <div className="mouse dark:before:bg-black dark:border-b dark:border-solid border-[#787373] before:bg-white"></div>
       </div>
     </section>
   );
