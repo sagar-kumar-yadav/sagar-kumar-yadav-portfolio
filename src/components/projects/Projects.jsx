@@ -1,16 +1,11 @@
 import React from "react";
 import "../projects/projects.css";
-import project from "../../assets/images/projects_imgs/project.png";
-// import Project1 from "../../assets/project1.png";
-// import Project3 from "../../assets/project3.png";
-// import Project2 from "../../assets/project2.png";
-// import Project4 from "../../assets/project4.png";
-import Github from "../../assets/icons8-github-30.png";
+import Github from "/pIcons/icons8-github-30.png";
 
 const projectData = [
   {
     id: "01",
-    imgUrl: "src/assets/images/projects_imgs/project.png",
+    imgUrl: "images/projectsImg/project.png",
     category: "Web Design",
     title: "eCommerce Website🛒",
     description:
@@ -23,7 +18,7 @@ const projectData = [
   },
   {
     id: "02",
-    imgUrl: "src/assets/images/projects_imgs/project1.png",
+    imgUrl:  "images/projectsImg//project1.png",
     category: "Web Design",
     title: "Image Search Application🖼️",
     description:
@@ -36,7 +31,7 @@ const projectData = [
   },
   {
     id: "03",
-    imgUrl: "src/assets/images/projects_imgs/project4.png",
+    imgUrl:  "images/projectsImg/project4.png",
     category: "Web Design",
     title: "Drum Kit Website🏩",
     description:
@@ -97,7 +92,7 @@ const Projects = () => {
                     <span className="w-5">
                       <a href={p.liveUrl}>
                         <img
-                          src="/src/assets/open_in_new.png"
+                          src="pIcons/open_in_new.png"
                           alt="live-demo"
                           className="bg-white rounded"
                         />

@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import logo from "../../assets/pass1.png";
+// import logo from "../../assets/pass1.png";
 // import { Link } from "react-scroll";
 import { Link as ScrollLink } from "react-scroll";
 import { FiSun } from "react-icons/fi";

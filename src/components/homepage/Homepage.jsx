@@ -2,8 +2,8 @@ import React from "react";
 import "./homepage.css";
 
 // import { Link as RouterLink } from "react-router-dom";
-import Linkdin from "../../assets/icons8-linkedin-30.png";
-import Github from "../../assets/icons8-github-30.png";
+import Linkdin from "/pIcons/icons8-linkedin-30.png";
+import Github from "/pIcons/icons8-github-30.png";
 
 const TechStack = [
   {
@@ -132,7 +132,7 @@ const Homepage = () => {
 
         <div className="flex-grow-[0.3]  min-w-max">
           <div className="rounded-full overflow-hidden w-[17rem] h-[17rem]">
-            <img src="/src/assets/home_1.png" alt="" />
+            <img src="portfolioimgs/home_1.png" alt="" />
           </div>
         </div>
       </div>

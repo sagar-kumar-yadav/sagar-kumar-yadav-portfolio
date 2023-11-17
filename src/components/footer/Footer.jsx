@@ -1,9 +1,9 @@
 import React from "react";
 import "./footer.css";
-import Linkdin from "../../assets/linkedin-ico.png";
-import Github from "../../assets/github-ico.png";
-import Instagram from "../../assets/insta-ico.png";
-import Mail from "../../assets/email.png";
+import Linkdin from "/pIcons/linkedin-ico.png";
+import Github from "/pIcons/github-ico.png";
+import Instagram from "/pIcons/insta-ico.png";
+import Mail from "/pIcons/email.png";
 
 const Footer = () => {
   return (

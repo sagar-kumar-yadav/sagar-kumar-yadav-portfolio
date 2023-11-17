@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./contact.css";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-import photo from "../../assets/images/contact.jpg";
+import photo from "/images/contact.jpg";
 
 const Contact = () => {
   const form = useRef();
