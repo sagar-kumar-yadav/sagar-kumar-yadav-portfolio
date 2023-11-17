@@ -1,9 +1,11 @@
 import React from "react";
 import "./navbar.css";
 import logo from "../../assets/pass1.png";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { FiSun } from "react-icons/fi";
 import { MdOutlineNightlight } from "react-icons/md";
+
 
 const Navbar = ({ toggleTheme, darkMode }) => {
   return (
@@ -11,13 +13,15 @@ const Navbar = ({ toggleTheme, darkMode }) => {
       <div className="flex items-center w-[90%] justify-between min-w-max m-auto ">
         {/* Logo And Name --------------------------------------------------------*/}
         <div className="header_logo_and_name_cont logo ">
-          <span className="header_logo_name">Sagar.dev</span>
+          <a href="#" className="">
+            <span className="header_logo_name">Sagar.dev</span>
+          </a>
         </div>
         {/* Menus --------------------------------------------------------------------*/}
         <div className=" min-w-max flex items-center gap-4 ">
           <ul className="menu-items ">
             <li>
-              <Link
+              <ScrollLink
                 activeClass="active"
                 to="home"
                 spy={true}
@@ -27,51 +31,51 @@ const Navbar = ({ toggleTheme, darkMode }) => {
                 className="header_link "
               >
                 <span className=" font-bold">Home</span>
-              </Link>
+              </ScrollLink>
             </li>
             <li>
-              <Link
+              <ScrollLink
                 activeClass="active"
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-10}
+                offset={-50}
                 duration={500}
                 className="header_link "
               >
-                 <span className=" font-bold">About</span>
-              </Link>
+                <span className=" font-bold">About</span>
+              </ScrollLink>
             </li>
             <li>
-              <Link
+              <ScrollLink
                 activeClass="active"
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-5}
+                offset={-50}
                 duration={500}
                 className="header_link "
               >
-                 <span className=" font-bold">Projects</span>
-              </Link>
+                <span className=" font-bold">Projects</span>
+              </ScrollLink>
             </li>
             <li>
-              <Link
+              <ScrollLink
                 activeClass="active"
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-5}
+                offset={-50}
                 duration={500}
                 className="header_link "
               >
-                 <span className=" font-bold">Contact</span>
-              </Link>
+                <span className=" font-bold">Contact</span>
+              </ScrollLink>
             </li>
           </ul>
           <button onClick={toggleTheme} className="p-2">
             {darkMode ? (
-              <FiSun size={24} color={"black"}/>
+              <FiSun size={24} color={"black"} />
             ) : (
               <MdOutlineNightlight size={24} color={"white"} />
             )}

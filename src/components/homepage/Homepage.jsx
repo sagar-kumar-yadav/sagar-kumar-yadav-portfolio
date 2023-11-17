@@ -1,6 +1,7 @@
 import React from "react";
 import "./homepage.css";
-import { Link } from "react-scroll";
+
+// import { Link as RouterLink } from "react-router-dom";
 import Linkdin from "../../assets/icons8-linkedin-30.png";
 import Github from "../../assets/icons8-github-30.png";
 
@@ -91,12 +92,14 @@ const Homepage = () => {
 
           {/* github and linkedin link ----- */}
           <div className="flex gap-2 pt-4">
-            <Link to="https://www.linkedin.com/in/sagar-kumar-yadav/">
+            <a href="https://www.linkedin.com/in/sagar-kumar-yadav/">
               <img className="w-6" src={Linkdin} alt="icon" />
-            </Link>
-            <Link to="https://github.com/sagar-kumar-yadav">
+            </a>
+            
+            <a href="https://github.com/sagar-kumar-yadav">
               <img className="w-6 " src={Github} alt="icon" />
-            </Link>
+            </a>
+            
           </div>
 
           {/* Hire me and download cv */}
@@ -104,17 +107,18 @@ const Homepage = () => {
             className="mt-8 flex gap-4
           "
           >
-            <Link to="mailto:sagarkryadav31@gmail.com">
+            <a href="mailto:sagarkryadav31@gmail.com">
               <button className="text-lg text-white font-bold rounded-md py-2 px-5 hire_me_btn">
                 Hire Me
               </button>
-            </Link>
-
-            <Link to="https://drive.google.com/file/d/1t1RfWu9raKqSW8IBHSJ9FgOhY0pKQ9Z4/view?usp=share_link">
+            </a>
+           
+            <a href="https://drive.google.com/file/d/1t1RfWu9raKqSW8IBHSJ9FgOhY0pKQ9Z4/view?usp=share_link">
               <button className="text-lg  font-semibold rounded-md py-2 px-5 dark:bg-black dark:text-white project_btn">
                 Download CV
               </button>
-            </Link>
+            </a>
+           
           </div>
 
           {/* Tech Stack ----------------- */}
