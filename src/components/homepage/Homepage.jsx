@@ -62,7 +62,7 @@ const Homepage = () => {
   return (
     <section
       id="home"
-      className="home h-[100vh] dark:bg-[#f7f7f7] dark:text-black bg-[#f7f7f7] min-h-max relative overflow-hidden"
+      className="home h-[100vh] bg-[#f7f7f7] text-black bg-[#f7f7f7] min-h-max relative overflow-hidden"
     >
       <div
         className="home_content flex pt-48 pb-40 w-[75%] m-auto"

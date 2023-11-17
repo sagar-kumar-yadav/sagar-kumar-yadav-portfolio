@@ -26,7 +26,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-50}
                 duration={500}
                 className="header_link "
               >
@@ -52,7 +52,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-45}
                 duration={500}
                 className="header_link "
               >
@@ -65,7 +65,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-45}
                 duration={500}
                 className="header_link "
               >

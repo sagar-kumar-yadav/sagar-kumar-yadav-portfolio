@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <div
-      className={`${darkMode && "dark"} w-full bg-white mih-h-[100vh] h-full`}
+      className={`${darkMode && "dark"} w-full bg-[#1c1a1a] mih-h-[100vh] h-full`}
     >
       <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
       <Homepage />
