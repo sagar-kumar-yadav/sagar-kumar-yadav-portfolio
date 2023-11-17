@@ -12,20 +12,28 @@ import "aos/dist/aos.css";
 AOS.init();
 
 const App = () => {
+  const [darkMode, setDarkMode] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
+
+  const toggleTheme = () => {
+    setDarkMode((prev) => !prev);
+  };
+
   return (
-    <>
-      <Navbar toggleMenu={toggleMenu} isOpen={isOpen} />
+    <div
+      className={`${darkMode && "dark"} w-full bg-white mih-h-[100vh] h-full`}
+    >
+      <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
       <Homepage />
       <About />
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 

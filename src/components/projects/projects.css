@@ -1,9 +1,3 @@
-#projects{
-    width: 100vw;
-    background: rgb(50, 50, 50);
-    color: white;
-    padding: 8rem 0;
-}
 
 .projects_main_container{
     
@@ -12,9 +6,7 @@
     width: 100%;
 }
 
-.project_heading_sec{
-    margin-bottom: 5rem;
-}
+
 
 .heading{
     display: block;
@@ -23,7 +15,7 @@
     letter-spacing: 1px;
     letter-spacing: 3px;
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
     position: relative;
     font-weight: 800;
 }

@@ -1,6 +1,6 @@
 .about{
     width: 100vw;
-    padding: 8rem 0;
+    /* padding: 8rem 0; */
     background: rgb(50 50 50 / 97%);
     color: white;
 }
@@ -12,7 +12,7 @@
 }
 
 .about_heading_sec{
-margin-bottom: 3rem;
+margin-bottom: 2rem;
 padding: 1rem;
 }
 

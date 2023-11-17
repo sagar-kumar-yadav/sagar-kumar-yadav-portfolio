@@ -1,8 +1,7 @@
 .contact_con{
-    width: 100vw;
-    background: rgb(50 50 50 / 97%);
-    color: white;
+    width: 75%;
     padding: 3rem 0;
+    margin: auto;
 }
 
 .contact_container{

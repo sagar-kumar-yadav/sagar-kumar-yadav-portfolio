@@ -6,11 +6,36 @@ import Project3 from "../../assets/project3.png";
 import Project2 from "../../assets/project2.png";
 import Project4 from "../../assets/project4.png";
 
+const projectData = [
+  {
+    id: "01",
+    imgUrl: "/src/assets/project.png",
+    category: "Web Design",
+    title: "Restaurant Website",
+    description:
+      "I made a beautiful Restaurant website using a custom Toggle Bar menu with HTML, CSS, and Java Script. This website also features a lovely animation.",
+    technologies: '"Javascript" "HTML" "CSS"',
+    siteUrl: "https://github.com/sushantkr384/restaurant-website-sushant.git",
+    alt: "project1",
+  },
+  {
+    id: "02",
+    imgUrl: "/src/assets/project.png",
+    category: "Web Design",
+    title: "Restaurant Website",
+    description:
+      "I made a beautiful Restaurant website using a custom Toggle Bar menu with HTML, CSS, and Java Script. This website also features a lovely animation.",
+    technologies: ["Javascript", "HTML", "CSS"],
+    siteUrl: "https://github.com/sushantkr384/restaurant-website-sushant.git",
+    alt: "project1",
+  },
+];
+
 const Projects = () => {
   return (
-    <section id="projects" className="projects">
-      <div className="projects_main_container">
-        <div className="project_heading_sec">
+    <section id="projects" className="project bg-[#f7f7f7]">
+      <div className="projects_main_container w-[75%]">
+        <div className="project_heading_sec p-4">
           <span className="heading">Projects</span>
           <span className="heading_para">
             Here, you can explore my personal projects about my current
@@ -19,118 +44,23 @@ const Projects = () => {
           </span>
         </div>
 
-        <div className="flex flex-wrap gap-10 lg:gap-20 justify-center ">
-          <div className="project_box_cont w-[450px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
-            <img
-              src={project}
-              alt="img1"
-              className="w-full h-[250px] object-cover rounded-md "
-            />
+        <div className="w-[90%] m-auto">
+          {projectData.map((p) => (
+            <div className="flex gap-24 p-8" key={p.id}>
+              <div className="w-[68rem] ">
+                <img
+                  src={p.imgUrl}
+                  alt={p.alt}
+                  className=""
+                />
+              </div>
+              <div className="">
+                <p>{p.description}</p>
 
-            <div className="project_desc_cont flex flex-col justify-start w-full h-[100px] bg-[rgb(50, 50, 50)] ">
-              <h4 className="project_title_heading">E-commerce MERN APP</h4>
-              <a
-                className="check_it_out_btn"
-                href="https://github.com/sagar-kumar-yadav/eCommerce-Application-Using-MERN"
-              >
-                Github Repository
-              </a>
-              {/* <p className="text-sm px-1 text-center">
-                An responsive user interface while
-                effectively utilizing the useState hook for state management
-                within the React.js framework.
-              </p> */}
+                <p>tech stack | <span>{p.technologies}</span></p>
+              </div>
             </div>
-          </div>
-          <div className="project_box_cont w-[350px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
-            <img
-              src={Project1}
-              alt="img1"
-              className="w-full h-[250px] object-cover rounded-md "
-            />
-
-            <div className="project_desc_cont flex flex-col justify-start w-full h-[100px] bg-[rgb(50, 50, 50)] ">
-              <h4 className="project_title_heading">
-                Web Screen and Webcam Recorder
-              </h4>
-              <a
-                className="check_it_out_btn"
-                href="https://github.com/sagar-kumar-yadav/Webcam-and-Screen-Recorder"
-              >
-                Github Repository
-              </a>
-              {/* <p className="text-sm text-orange-600  px-1 uppercase">
-                Created a web app for recording screen and webcam videos, with
-                audio and user authentication.
-              </p> */}
-            </div>
-          </div>
-
-          <div className="project_box_cont w-[450px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
-            <img
-              src={Project2}
-              alt="img1"
-              className="w-full h-[250px] object-cover rounded-md "
-            />
-
-            <div className="project_desc_cont flex flex-col justify-start w-full h-[100px] bg-[rgb(50, 50, 50)] ">
-              <h4 className="project_title_heading">Product Details Page</h4>
-              <a
-                className="check_it_out_btn bg-red-600"
-                href="https://fluffy-faloodeh-6a844c.netlify.app/"
-              >
-                See it Live
-              </a>
-              {/* <p className="text-sm px-1 text-center">
-                An responsive user interface while
-                effectively utilizing the useState hook for state management
-                within the React.js framework.
-              </p> */}
-            </div>
-          </div>
-
-          <div className="project_box_cont w-[350px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
-            <img
-              src={Project3}
-              alt="img1"
-              className="w-full h-[250px] object-cover rounded-md "
-            />
-
-            <div className="project_desc_cont flex flex-col justify-start w-full h-[100px] bg-[rgb(50, 50, 50)] ">
-              <h4 className="project_title_heading">Password Generator</h4>
-              <a
-                className="check_it_out_btn bg-red-600"
-                href="https://master--frolicking-parfait-1cdd69.netlify.app/"
-              >
-                See it Live
-              </a>
-              {/* <p className="text-sm  px-1 text-center">
-                Users can set the desired length of the generated password using
-                an interactive input field.
-              </p> */}
-            </div>
-          </div>
-
-          <div className="project_box_cont w-[450px] h-[350px] cursor-pointer shadow-xl hover:scale-110 ease-in-out duration-300 rounded-md ">
-            <img
-              src={Project4}
-              alt="img1"
-              className="w-full h-[250px] object-cover rounded-md "
-            />
-
-            <div className="project_desc_cont flex flex-col justify-start w-full h-[100px] bg-[rgb(50, 50, 50)]">
-              <h4 className="project_title_heading">Drum Website</h4>
-              <a
-                className="check_it_out_btn bg-red-600"
-                href="https://master--sweet-travesseiro-540fdd.netlify.app/"
-              >
-                See it Live
-              </a>
-              {/* <p className="text-sm text-orange-600 px-1 uppercase">
-                Web Devlopment
-              </p> */}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

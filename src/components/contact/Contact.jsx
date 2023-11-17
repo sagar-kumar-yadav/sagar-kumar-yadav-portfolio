@@ -31,13 +31,13 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact_con">
-      <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 font-semibold dark:text-gray-100">
-        <div className="flex flex-col justify-between">
+      <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 font-semibold text-black ">
+        <div className="flex flex-col justify-evenly ite">
           <div className="space-y-2">
             <h2 className="text-4xl font-bold leadi lg:text-5xl">
               Let's talk!
             </h2>
-            <div className="">sagarkryadav31@gmail.com</div>
+            {/* <div className="">sagarkryadav31@gmail.com</div> */}
           </div>
           <div className=" w-64 photo_cont">
             <img src={photo} alt="img-here" className="w-[100%] h-[100%] p-4" />
@@ -45,7 +45,7 @@ const Contact = () => {
         </div>
         <form ref={form} className="space-y-6" onSubmit={sendEmail}>
           <div>
-            <label for="name" className="text-sm">
+            <label htmlFor="name" className="text-sm font-bold">
               Full name
             </label>
             <input
@@ -53,38 +53,38 @@ const Contact = () => {
               name="user_name"
               type="text"
               placeholder=""
-              className="w-full p-3 rounded font-semibold text-black"
+              className="w-full p-3 rounded font-semibold border-[2px] border-solid border-black  text-black"
               required
             />
           </div>
           <div>
-            <label for="email" className="text-sm">
+            <label htmlFor="email" className="text-sm font-bold">
               Email
             </label>
             <input
               id="email"
               name="user_email"
               type="email"
-              className="w-full p-3 rounded font-semibold text-black"
+              className="w-full p-3 rounded font-semibold border-[2px] border-solid border-black  text-black"
               required
             />
           </div>
           <div>
-            <label for="message" className="text-sm">
+            <label htmlFor="message" className="text-sm font-bold">
               Message
             </label>
             <textarea
               name="message"
               id="message"
               rows="3"
-              className="w-full p-3 rounded font-semibold text-black"
+              className="w-full p-3 rounded font-semibold border-[2px] border-solid border-black  text-black"
               required
             ></textarea>
           </div>
           <button
             type="submit"
             value="Send"
-            className="w-full p-3 text-sm font-bold tracki uppercase rounded bg-red-600"
+            className="w-full p-3 text-sm font-bold tracki uppercase rounded bg-red-600 text-white"
           >
             Send Message
           </button>
