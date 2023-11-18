@@ -75,7 +75,7 @@ const Navbar = ({ toggleTheme, darkMode }) => {
           </ul>
           <button onClick={toggleTheme} className="p-2">
             {darkMode ? (
-              <FiSun size={24} color={"black"} />
+              <FiSun size={24} color={"black"}/>
             ) : (
               <MdOutlineNightlight size={24} color={"white"} />
             )}
