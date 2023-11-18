@@ -18,7 +18,7 @@ const projectData = [
   },
   {
     id: "02",
-    imgUrl:  "images/projectsImg//project1.png",
+    imgUrl: "images/projectsImg//project1.png",
     category: "Web Design",
     title: "Image Search Application🖼️",
     description:
@@ -31,7 +31,7 @@ const projectData = [
   },
   {
     id: "03",
-    imgUrl:  "images/projectsImg/project4.png",
+    imgUrl: "images/projectsImg/project4.png",
     category: "Web Design",
     title: "Drum Kit Website🏩",
     description:
@@ -47,27 +47,31 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="project bg-[#1c1a1a] text-white dark:text-black dark:bg-[#f7f7f7]"
+      className="project bg-[#1c1a1a] text-white dark:text-black dark:bg-white"
     >
       <div className="projects_main_container w-[75%]">
         <div className="project_heading_sec p-4">
-          <span className="heading">Projects</span>
-          <span className="heading_para">
+          <span className="heading max-sm:text-3xl">Projects</span>
+          <span className="heading_para max-sm:p-0 max-sm:text-sm">
             Here, you can explore my personal projects about my current
             programming and technology skills. Each project represents a unique
             blend of creativity, problem-solving, and technical expertise.
           </span>
         </div>
 
-        <div className="w-[90%] m-auto">
+        <div className="">
           {projectData.map((p) => (
-            <div className="flex items-center gap-24 p-8 " key={p.id}>
-              <div className="w-[68rem] ">
+            <div
+              className="flex flex-col lg:flex-row items-center gap-24 p-8 mt-8 max-sm:gap-8"
+              style={{ boxShadow: "2px 4px 12px rgba(0,0,0,.08)" }}
+              key={p.id}
+            >
+              <div className="min-w-[19rem] md:w-[33rem]">
                 <img src={p.imgUrl} alt={p.alt} className="" />
               </div>
               <div className="">
                 <p className=" text-center font-bold pb-2">{p.title}</p>
-                <p className="text-center max-w-4xl">{p.description}</p>
+                <p className="text-center max-sm:w-[19rem]">{p.description}</p>
 
                 <p className="text-center pt-1">
                   <span className=" font-semibold">

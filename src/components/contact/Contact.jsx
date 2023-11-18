@@ -31,15 +31,15 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact_con bg-[#211f1f] text-white dark:bg-white dark:text-black w-full">
-      <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 font-semibold w-[75%]">
+      <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 font-semibold w-[75%] max-sm:py-0">
         <div className="flex flex-col justify-evenly ite">
           <div className="space-y-2">
-            <h2 className="text-4xl font-bold leadi lg:text-5xl">
+            <h2 className="text-4xl font-bold leadi lg:text-5xl max-sm:text-center">
               Let's talk!
             </h2>
             {/* <div className="">sagarkryadav31@gmail.com</div> */}
           </div>
-          <div className=" w-64 photo_cont">
+          <div className=" w-64 photo_cont max-sm:w-44">
             <img src={photo} alt="img-here" className="w-[100%] h-[100%] p-4" />
           </div>
         </div>

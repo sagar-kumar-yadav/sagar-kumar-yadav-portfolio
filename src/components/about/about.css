@@ -1,7 +1,7 @@
 .about{
     width: 100vw;
     /* padding: 8rem 0; */
-    background: rgb(50 50 50 / 97%);
+    background: #1f1c1c;
     color: white;
 }
 
@@ -12,7 +12,6 @@
 }
 
 .about_heading_sec{
-margin-bottom: 2rem;
 padding: 1rem;
 }
 
@@ -43,7 +42,7 @@ padding: 1rem;
 .aboutDesc{
     display: block;
     text-align: center;
-    padding: 0 4rem;
+    padding: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
     max-width: 63rem;
@@ -120,4 +119,5 @@ padding: 1rem;
     border-radius: 5px;
     font-weight: 600;
     /* color: #777; */
+    
 }

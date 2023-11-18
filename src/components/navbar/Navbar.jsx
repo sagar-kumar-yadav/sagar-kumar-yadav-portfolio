@@ -1,25 +1,24 @@
 import React from "react";
 import "./navbar.css";
-// import logo from "../../assets/pass1.png";
-// import { Link } from "react-scroll";
 import { Link as ScrollLink } from "react-scroll";
 import { FiSun } from "react-icons/fi";
 import { MdOutlineNightlight } from "react-icons/md";
+import { BiMenu } from "react-icons/bi";
+import { AiOutlineClose } from "react-icons/ai";
 
-
-const Navbar = ({ toggleTheme, darkMode }) => {
+const Navbar = ({ toggleTheme, darkMode, isOpen, toggleMenu }) => {
   return (
     <header className=" fixed h-16 z-50 w-full flex items-center bg-[#323232] text-white dark:bg-white dark:text-black border-b border-solid border-[#787373]">
-      <div className="flex items-center w-[90%] justify-between min-w-max m-auto ">
+      <div className="flex items-center w-[83%] justify-between min-w-max m-auto ">
         {/* Logo And Name --------------------------------------------------------*/}
-        <div className="header_logo_and_name_cont logo ">
+        <div className=" ">
           <a href="#" className="">
-            <span className="header_logo_name">Sagar.dev</span>
+            <span className=" font-bold text-2xl">Sagar.dev</span>
           </a>
         </div>
         {/* Menus --------------------------------------------------------------------*/}
         <div className=" min-w-max flex items-center gap-4 ">
-          <ul className="menu-items ">
+          <ul className="menu-items max-md:hidden">
             <li>
               <ScrollLink
                 activeClass="active"
@@ -73,13 +72,99 @@ const Navbar = ({ toggleTheme, darkMode }) => {
               </ScrollLink>
             </li>
           </ul>
+
           <button onClick={toggleTheme} className="p-2">
             {darkMode ? (
-              <FiSun size={24} color={"black"}/>
+              <FiSun size={24} color={"black"} />
             ) : (
               <MdOutlineNightlight size={24} color={"white"} />
             )}
           </button>
+
+          <div className="pt-2 md:hidden">
+            <button
+              type="button"
+              className=""
+              aria-controls=",onile-menu"
+              aria-expanded="false"
+              onClick={toggleMenu}
+            >
+              <BiMenu size={26} className={`${isOpen ? "hidden" : "block"} `} />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`${
+          isOpen ? "block pt-4" : "hidden"
+        } md:hidden bg-white text-black `}
+        id="mobile-menu"
+      >
+        <div className="flex flex-col gap-4 text-md fixed top-0 right-0 bottom-0  w-5/6 max-w-[14rem] py-6 px-6 bg-[#1e1b1b] text-white overflow-y-auto">
+          <button
+            type="button"
+            className="flex items-center justify-end"
+            aria-controls=",onile-menu"
+            aria-expanded="false"
+            onClick={toggleMenu}
+          >
+            <AiOutlineClose
+              size={26}
+              className={`${isOpen ? "block" : "hidden"} `}
+            />
+          </button>
+
+          <ScrollLink
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            className="header_link "
+            onClick={toggleMenu}
+          >
+            <span className=" font-bold">Home</span>
+          </ScrollLink>
+
+          <ScrollLink
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+            className="header_link "
+            onClick={toggleMenu}
+          >
+            <span className=" font-bold">About</span>
+          </ScrollLink>
+
+          <ScrollLink
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-45}
+            duration={500}
+            className="header_link "
+            onClick={toggleMenu}
+          >
+            <span className=" font-bold">Projects</span>
+          </ScrollLink>
+
+          <ScrollLink
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-45}
+            duration={500}
+            className="header_link "
+            onClick={toggleMenu}
+          >
+            <span className=" font-bold">Contact</span>
+          </ScrollLink>
         </div>
       </div>
     </header>

@@ -31,7 +31,7 @@ const App = () => {
     <div
       className={`${darkMode && "dark"} w-full bg-white mih-h-[100vh] h-full`}
     >
-      <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
+      <Navbar toggleTheme={toggleTheme} darkMode={darkMode} isOpen={isOpen} toggleMenu={toggleMenu}/>
       <Homepage />
       <About />
       <Projects />
