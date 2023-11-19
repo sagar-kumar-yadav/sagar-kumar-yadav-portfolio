@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const About = () => {
   return (
-    <section id="about" className="about dark:bg-white dark:text-black">
+    <section id="about" className="about dark:bg-[#f7f7f7] dark:text-black">
       <div className="about_main_cont w-[75%]">
         <div className="about_heading_sec">
           <span className="aboutTitle max-sm:text-3xl">About me</span>

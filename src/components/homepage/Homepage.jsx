@@ -67,7 +67,7 @@ const Homepage = () => {
         className=" bg-[#1c1a1a] text-white dark:text-black dark:bg-[#f7f7f7] relative overflow-hidden "
       >
         <div
-          className="home_content flex flex-col m-auto lg:flex-row w-[80%] justify-between py-40 max-lg:pb-8"
+          className="home_content flex flex-col m-auto sm:flex-row w-[80%] justify-between py-40 max-lg:pb-8"
           data-aos="fade-down"
           data-aos-offset="100"
           data-aos-delay="50"
@@ -85,7 +85,7 @@ const Homepage = () => {
               </h1>
             </div>
             <div className=" text-lg font-medium text-left ">
-              <span className=" text-5xl font-semibold">
+              <span className=" text-5xl font-semibold max-sm:text-3xl max-lg:text-4xl">
                 Full-Stack developer👋🏻
               </span>{" "}
               <p className="">
@@ -119,7 +119,7 @@ const Homepage = () => {
           "
             >
               <a href="mailto:sagarkryadav31@gmail.com">
-                <button className="text-lg text-white font-bold rounded-md py-2 px-5 hire_me_btn">
+                <button className="text-lg text-white font-bold rounded-md py-2 px-5 hire_me_btn ">
                   Hire Me
                 </button>
               </a>
@@ -142,8 +142,8 @@ const Homepage = () => {
             </div>
           </div>
 
-          <div className="p-8 flex justify-center ">
-            <div className="rounded-full overflow-hidden w-[17rem] h-[17rem] max-md:w-[13rem] max-md:h-[13rem]">
+          <div className="p-8 flex justify-center">
+            <div className="rounded-full overflow-hidden w-[17rem] h-[17rem] max-lg:w-[12rem] max-lg:h-[12rem]">
               <img src="portfolioimgs/home_1.png" alt="portfolio_img" />
             </div>
           </div>
