@@ -61,10 +61,10 @@ const TechStack = [
 
 const Homepage = () => {
   return (
-    <section>
+    <section className="">
       <div
         id="home"
-        className=" bg-[#1c1a1a] text-white dark:text-black dark:bg-[#f7f7f7] relative overflow-hidden "
+        className=" bg-[#1c1a1a] text-white dark:text-black dark:bg-[#f7f7f7] relative overflow-hidden h-[85vh] max-sm:h-[100vh]"
       >
         <div
           className="home_content flex flex-col m-auto sm:flex-row w-[80%] justify-between py-40 max-lg:pb-8"

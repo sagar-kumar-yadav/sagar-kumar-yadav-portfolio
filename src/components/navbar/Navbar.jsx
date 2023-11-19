@@ -9,7 +9,7 @@ import { AiOutlineClose } from "react-icons/ai";
 const Navbar = ({ toggleTheme, darkMode, isOpen, toggleMenu }) => {
   return (
     <header className=" fixed h-16 z-50 w-full flex items-center bg-[#323232] text-white dark:bg-white dark:text-black border-b border-solid border-[#787373]">
-      <div className="flex items-center w-[83%] max-md:w-[92%] justify-between min-w-max m-auto ">
+      <div className="flex items-center w-[86%] max-md:w-[92%] justify-between min-w-max m-auto ">
         {/* Logo And Name --------------------------------------------------------*/}
         <div className=" ">
           <a href="#" className="">
@@ -81,7 +81,8 @@ const Navbar = ({ toggleTheme, darkMode, isOpen, toggleMenu }) => {
             )}
           </button>
 
-          <div className="pt-2 md:hidden">
+          {/* hamb btn */}
+          <div className="pt-2 md:hidden mr-[-14px]">
             <button
               type="button"
               className=""
@@ -92,6 +93,20 @@ const Navbar = ({ toggleTheme, darkMode, isOpen, toggleMenu }) => {
               <BiMenu size={26} className={`${isOpen ? "hidden" : "block"} `} />
             </button>
           </div>
+          <div className="pt-2 md:hidden">
+            <button
+              type="button"
+              className=""
+              aria-controls=",onile-menu"
+              aria-expanded="false"
+              onClick={toggleMenu}
+            >
+              <AiOutlineClose
+                size={26}
+                className={`${isOpen ? "block" : "hidden"} `}
+              />
+            </button>
+          </div>
         </div>
       </div>
       <div
@@ -100,20 +115,7 @@ const Navbar = ({ toggleTheme, darkMode, isOpen, toggleMenu }) => {
         } md:hidden bg-white text-black `}
         id="mobile-menu"
       >
-        <div className="flex flex-col gap-4 text-md fixed top-0 right-0 bottom-0  w-5/6 max-w-[10rem] py-6 px-6 bg-[#1e1b1b] text-white overflow-y-auto items-end">
-          <button
-            type="button"
-            className="flex items-center justify-end"
-            aria-controls=",onile-menu"
-            aria-expanded="false"
-            onClick={toggleMenu}
-          >
-            <AiOutlineClose
-              size={26}
-              className={`${isOpen ? "block" : "hidden"} `}
-            />
-          </button>
-
+        <div className="flex flex-col gap-4 text-md fixed top-16 right-0 bottom-0  w-5/6 max-w-[10rem] py-6 px-6 bg-[#1e1b1b] text-white overflow-y-auto items-end">
           <ScrollLink
             activeClass="active"
             to="home"
