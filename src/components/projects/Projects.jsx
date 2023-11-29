@@ -13,7 +13,7 @@ const projectData = [
     technologies: "React, Node.js, Express.js, MongoDB, RestAPI",
     siteUrl:
       "https://github.com/sagar-kumar-yadav/eCommerce-Application-Using-MERN",
-    liveUrl: "#",
+    liveUrl: "https://urbanethnic.netlify.app/",
     alt: "project",
   },
   {
