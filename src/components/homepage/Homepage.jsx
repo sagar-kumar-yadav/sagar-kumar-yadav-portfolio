@@ -124,7 +124,7 @@ const Homepage = () => {
                 </button>
               </a>
 
-              <a href="https://drive.google.com/file/d/19HjYRWydF6WBf7GN2T5gg1YgNlAXusFR/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1uKUKVz2D5QIj_DLp3yX5MFv8jrpH6QNE/view?usp=sharing">
                 <button className="text-lg  font-semibold rounded-md py-2 px-5 dark:bg-black dark:text-white project_btn">
                   Download CV
                 </button>
