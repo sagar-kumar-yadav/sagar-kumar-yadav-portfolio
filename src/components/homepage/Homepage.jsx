@@ -57,6 +57,14 @@ const TechStack = [
     id: "12",
     src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png",
   },
+  {
+    id: "13",
+    src: "https://th.bing.com/th/id/R.7afd213071e52a3a50d7d9c9db74d29b?rik=g3fAZfGv1DDzrQ&pid=ImgRaw&r=0",
+  },
+  // {
+  //   id: "14",
+  //   src: "https://pngimg.com/uploads/github/github_PNG53.png",
+  // },
 ];
 
 const Homepage = () => {

@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./contact.css";
-import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import photo from "/images/contact.jpg";
+// import dotenv from "dotenv";
+
+// dotenv.config()
 
 const Contact = () => {
   const form = useRef();
@@ -10,32 +13,32 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_21b6rq1",
-        "template_o0o0lyn",
-        form.current,
-        "GKY_Wb0c_ovV1L12P"
+      .sendForm("service_21b6rq1", "template_o0o0lyn", form.current,  "174a4mocVJI5Coyqv"
       )
       .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
+        () => {
+          // console.log(result.text);
+          // e.target.reset();
           toast.success("Email Sent !");
           alert("Email Sent !");
         },
         (error) => {
-          console.log(error.text);
+          console.log('Failed', error.text);
+          
         }
       );
   };
 
   return (
-    <section id="contact" className="contact_con bg-[#211f1f] text-white dark:bg-white dark:text-black w-full">
+    <section
+      id="contact"
+      className="contact_con bg-[#211f1f] text-white dark:bg-white dark:text-black w-full"
+    >
       <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 font-semibold w-[75%] max-sm:py-0">
         <div className="flex flex-col justify-evenly ite">
           <div className="space-y-2">
             <h2 className="text-4xl font-bold leadi lg:text-5xl max-sm:text-center">
-              Let's talk!
+              Let us talk!
             </h2>
             {/* <div className="">sagarkryadav31@gmail.com</div> */}
           </div>
@@ -95,3 +98,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
